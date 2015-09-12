@@ -1,0 +1,7 @@
+Django==1.8.4
+beautifulsoup4==4.4.0
+dj-database-url==0.3.0
+django-emoticons==1.1.2
+gunicorn==19.3.0
+whitenoise==2.0.3
+psycopg2==2.5.4
