@@ -27,7 +27,7 @@
                 {% endif %}
             </div>
             <strong>{{ comment.author }}</strong>
-            <p>{{ comment.text|linebreaks }}</p>
+            <p>{{ comment.text|emoticons|linebreaks }}</p>
         </div>
         {% endif %}
     {% empty %}
