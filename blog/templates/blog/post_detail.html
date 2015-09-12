@@ -1,5 +1,7 @@
 {% extends "blog/base.html" %}
 
+{% load emoticons_tags %}
+
 {% block content %}
     <div class="post">
         {% if post.published_date %}
@@ -9,6 +11,6 @@
         {% endif %}
         <a class="btn btn-default" href="{% url "post_edit" pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|emoticons|linebreaks }}</p>
     </div>
 {% endblock %}
